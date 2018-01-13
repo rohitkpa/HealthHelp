@@ -1,2 +1,0 @@
-def seizure_dt():
-	return "1. Stay with the person until the seizure has ended\n2. Communicate the situation to the individual once they are alert\n3. Comfort the individual\n4. Check to see if the individual is wearing any emergency information"

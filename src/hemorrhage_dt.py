@@ -1,2 +1,0 @@
-def hemorrhage_dt():
-	return "1. Remove any clothing or debris on the wound\n2. Stop the bleeding with a sterile bandage or clean cloth\n3. Apply pressure to do so\n4. Help the injured person lie down and immobilize the injured body part if possible"

@@ -1,2 +1,0 @@
-def overdose_dt():
-	return "1. If the individual is unconscious, place them on their side\n2. Identify the drug taken\n3. If overheating is noticed, remove unnecessary clothing to assist with cooling skin"
