@@ -9,5 +9,5 @@ def parse_message(s): #find keywords
 			attempted_suicide_dt()
 		if word == 'shooting':
 			shooting_dt()
-		if word == 'Back Pain':
+		if word == 'back pain':
 			
