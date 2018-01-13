@@ -1,5 +1,4 @@
-#symptom keywords
-keys = ['breathing difficulty', 'unconscious', 'heart problem', 'seizure', 'traumatic injury', 'stroke', 'hemmorrhage', 'overdose', 'poisoning', 'hypoglycemia', 'hyperglycemia', 'cardiac arrest', 'base pain', 'allergic reaction', 'pregnancy', 'headache', 'laceration', 'choking', 'hyperthermia', 'hypothermia', 'shooting', 'stabbing', 'burns']
+#keys = ['breathing difficulty', 'unconscious', 'heart problem', 'seizure', 'traumatic injury', 'stroke', 'hemmorrhage', 'overdose', 'poisoning', 'hypoglycemia', 'hyperglycemia', 'cardiac arrest', 'base pain', 'allergic reaction', 'pregnancy', 'headache', 'laceration', 'choking', 'hyperthermia', 'hypothermia', 'shooting', 'stabbing', 'burns']
 
 def parse_message(s): #find keywords
 	words = s.split()
