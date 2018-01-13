@@ -4,61 +4,44 @@ keys = ['breathing difficulty', 'unconscious', 'heart problem', 'seizure', 'trau
 def parse_message(s): #find keywords
 	words = s.split()
 	for word in words:
-		if word == 'allergic reaction':
-			allergic_reaction_dt()
-		if word == 'back pain':
-			back_pain_dt()
-		if word == 'breathing difficulty':
-			breathing_difficulty_dt()
 		if word == 'burns':
-			burns_dt
-		if word == 'cardiac arrest':
-			cardiacArrest_dt
+			return burns_dt()
 		if word == 'choking':
-			choking_dt()
+			return choking_dt()
 		if word == 'headache':
-			headache_dt()
-		if word == 'heart_problem':
-			heart_problem_dt()
+			return headache_dt()
+		if word == 'heart':
+			return heart_problem_dt()
 		if word == 'hemorrhage':
-			hemorrhage_dt()
+			return hemorrhage_dt()
 		if word == 'hyperthermia':
-			hyperthermia_dt()
+			return hyperthermia_dt()
 		if word == 'hyperglycemia':
-			hypohyperglycemia_dt()
+			return hypohyperglycemia_dt()
 		if word == 'hypoglycemia':
-			hypohyperglycemia_dt()
+			return hypohyperglycemia_dt()
 		if word == 'hypothermia':
-			hypothermia_dt()
+			return hypothermia_dt()
 		if word == 'laceration':
-			laceration_dt()
+			return laceration_dt()
 		if word == 'overdose':
-			overdose_dt()
+			return overdose_dt()
 		if word == 'poisoning':
-			poisoning_dt()
+			return poisoning_dt()
 		if word == 'pregnancy':
-			pregnancy_dt()
+			return pregnancy_dt()
 		if word == 'seizure':
-			seizure_dt()
+			return seizure_dt()
 		if word == 'shooting':
-			shooting_dt()
+			return shooting_dt()
 		if word == 'stabbing':
-			stabbing_dt()
-		if word == 'traumatic injury':
-			traumatic_injury_dt()
+			return stabbing_dt()
 		if word == 'unconscious':
-			unconscious_dt()
+			return unconscious_dt()
+	return "error 1738"
 
-def allergic_reaction_dt():
-	return "\n\n1. Apply allergy medication if applicable\n2. If the individual is unconscious, apply CPR."
-def back_pain_dt():
-	return "\n\n1. Give pain medication\n2. Use Ice Therapy, Heat Therapy, stretching, or a combination of these options should be used."
-def breathing_difficulty_dt():
-	return "\n\n1. Begin CPR\n2. Loosen any tight clothing\n3. Help the person use any prescribed medicine such as home oxygen or an inhaler\n4. Close any open wounds."
 def burns_dt():
     return "\n\n1. Stop burning\n2. Remove constrictive clothing\n3. For first-degree burns, cool burn, protect burn with sterile gauze or cloth, and then treat burn."
-def cardiacArrest_dt():
-    return "\n\n1. If the individual does not respond, use an AED if available. \n2. If the individual remains in cardiac arrest, use CPR."
 def choking_dt():
     return "\n\n1. If the person can cough, tell them to continue coughing. \n2. If no response is received, give 5 back blows. \n3. Provide 5 abdominal thrusts via the Heimlich maneuver. \n4. Alternate between these blows and thrusts until choking stops."
 def headache_dt():
@@ -89,7 +72,5 @@ def stabbing_dt():
     return "\n\n1. Get the individual on their back\n2. Tell the individual to breathe\n3. If contractions are less than two minutes, birth is imminent\n4.Ensure that as the baby comes out, you do not pull on the baby and that you do not drop the baby."
 def stroke_dt():
 	return "\n\n1. Lay the individual on their side\n2. If the individual is not breathing, perform CPR\n3. Cover them with a blanket\n4. Do not give them anything to eat or drink."
-def traumatic_injury_dt():
-	return "\n\n1. Keep the individual still\n 2. Stop bleeding by applying pressure with sterile gauze or cloth\n 3. If the person becomes unconscious, begin CPR."
 def unconscious_dt():
 	return "\n\n1. Roll them into a comfortable position\n2. Apply CPR."	
