@@ -68,7 +68,7 @@ def seizure_dt():
 def shooting_dt():
 	return "\n\n1. Treat both entry and exit wounds\n2. Elevate the wound\n3. Apply direct pressure and immobilize the affected limb\n4. Cover the wound with sterile gauze or clothing."
 def stabbing_dt():
-    return "\n\n1. Lie the victim down. Remove clothing around the wound.\n2. Stop the bleeding by applying pressure with sterile gauze or clothing.\n3. If the knife is in the wound, do not remove it. Clean the wound if possible."
+    return "\n\n1. Lie the victim down. Remove clothing around the wound.\n2. Stop the bleeding by applying pressure with sterile gauze or clothing.\n3. If the knife is in the wound, do not remove it.\n4. Clean the wound if possible."
 def stroke_dt():
 	return "\n\n1. Lay the individual on their side\n2. If the individual is not breathing, perform CPR\n3. Cover them with a blanket\n4. Do not give them anything to eat or drink."
 def unconscious_dt():
